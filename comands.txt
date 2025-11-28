@@ -1,0 +1,65 @@
+conf t
+
+hostname R10
+
+interface Loopback0
+
+ ip address 10.10.10.10 255.255.255.255
+
+exit
+
+! Link to R4 (Serial)
+
+interface Serial0/0/0
+
+ description Link_to_R4
+
+ ip address 10.0.1.2 255.255.255.252
+
+ no shutdown
+
+exit
+
+! Link to R1 (Ethernet) - Cost Manipulation here
+
+interface GigabitEthernet0/0
+
+ description Link_to_R1
+
+ ip address 10.0.0.2 255.255.255.252
+
+ ip ospf cost 10
+
+ no shutdown
+
+exit
+
+! Link to R2 (Ethernet)
+
+interface GigabitEthernet0/1
+
+ description Link_to_R2
+
+ ip address 10.0.0.10 255.255.255.252
+
+ no shutdown
+
+exit
+
+router ospf 1
+
+ router-id 10.10.10.10
+
+ network 10.0.1.0 0.0.0.3 area 1
+
+ network 10.0.0.0 0.0.0.3 area 0
+
+ network 10.0.0.8 0.0.0.3 area 0
+
+ area 1 stub
+
+exit
+
+end
+
+write

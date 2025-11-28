@@ -1,0 +1,596 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "AI Scrum Master Agent Service",
+        "description": "Production-ready service with AI analysis and Telegram notifications",
+        "version": "2.0.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "summary": "Root",
+                "description": "Health check endpoint",
+                "operationId": "root__get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/sessions": {
+            "get": {
+                "summary": "Get Active Sessions",
+                "description": "Get information about active agent sessions",
+                "operationId": "get_active_sessions_sessions_get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/start_agent": {
+            "post": {
+                "summary": "Start Agent",
+                "description": "Start the AI agent to join a Google Meet call\n\nArgs:\n    request: Contains meeting_url and optional participants_info\n    background_tasks: FastAPI background tasks handler\n    \nReturns:\n    AgentResponse with session_id and status",
+                "operationId": "start_agent_start_agent_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/StartAgentRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/AgentResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/stop_agent/{session_id}": {
+            "post": {
+                "summary": "Stop Agent",
+                "description": "Stop a specific agent session",
+                "operationId": "stop_agent_stop_agent__session_id__post",
+                "parameters": [
+                    {
+                        "name": "session_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Session Id"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/agent_status/{session_id}": {
+            "get": {
+                "summary": "Get Agent Status",
+                "description": "Get status of a specific agent session",
+                "operationId": "get_agent_status_agent_status__session_id__get",
+                "parameters": [
+                    {
+                        "name": "session_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Session Id"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/transcript/chunk": {
+            "post": {
+                "summary": "Process Transcript Chunk",
+                "description": "Process a 5-minute text chunk in real-time\nCleans text with Gemini and analyzes if clarifying questions are needed",
+                "operationId": "process_transcript_chunk_api_transcript_chunk_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ChunkProcessRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ChunkProcessResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/transcript/final": {
+            "post": {
+                "summary": "Process Final Transcript",
+                "description": "Process the final meeting transcript\nGenerates summary and sends Telegram notification",
+                "operationId": "process_final_transcript_api_transcript_final_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/FinalTranscriptRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/FinalTranscriptResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/session/{session_id}/history": {
+            "get": {
+                "summary": "Get Session History",
+                "description": "Get the conversation history for a session",
+                "operationId": "get_session_history_api_session__session_id__history_get",
+                "parameters": [
+                    {
+                        "name": "session_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Session Id"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/session/{session_id}": {
+            "delete": {
+                "summary": "Cleanup Session",
+                "description": "Manually cleanup a session",
+                "operationId": "cleanup_session_api_session__session_id__delete",
+                "parameters": [
+                    {
+                        "name": "session_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "title": "Session Id"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AgentResponse": {
+                "properties": {
+                    "session_id": {
+                        "type": "string",
+                        "title": "Session Id"
+                    },
+                    "status": {
+                        "type": "string",
+                        "title": "Status"
+                    },
+                    "message": {
+                        "type": "string",
+                        "title": "Message"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "session_id",
+                    "status",
+                    "message"
+                ],
+                "title": "AgentResponse"
+            },
+            "ChunkProcessRequest": {
+                "properties": {
+                    "session_id": {
+                        "type": "string",
+                        "title": "Session Id"
+                    },
+                    "text_chunk": {
+                        "type": "string",
+                        "title": "Text Chunk"
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "title": "Timestamp"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "session_id",
+                    "text_chunk",
+                    "timestamp"
+                ],
+                "title": "ChunkProcessRequest"
+            },
+            "ChunkProcessResponse": {
+                "properties": {
+                    "action": {
+                        "type": "string",
+                        "title": "Action",
+                        "description": "Either 'ask_question' or 'continue'"
+                    },
+                    "question_text": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Question Text",
+                        "description": "Question to ask if action is 'ask_question'"
+                    },
+                    "cleaned_text": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Cleaned Text",
+                        "description": "Cleaned version of the input text"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "action"
+                ],
+                "title": "ChunkProcessResponse"
+            },
+            "FinalTranscriptRequest": {
+                "properties": {
+                    "session_id": {
+                        "type": "string",
+                        "title": "Session Id"
+                    },
+                    "full_raw_transcript": {
+                        "type": "string",
+                        "title": "Full Raw Transcript"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "session_id",
+                    "full_raw_transcript"
+                ],
+                "title": "FinalTranscriptRequest"
+            },
+            "FinalTranscriptResponse": {
+                "properties": {
+                    "success": {
+                        "type": "boolean",
+                        "title": "Success"
+                    },
+                    "summary": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/MeetingSummary"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "telegram_sent": {
+                        "type": "boolean",
+                        "title": "Telegram Sent",
+                        "default": false
+                    },
+                    "message": {
+                        "type": "string",
+                        "title": "Message"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "success",
+                    "message"
+                ],
+                "title": "FinalTranscriptResponse"
+            },
+            "HTTPValidationError": {
+                "properties": {
+                    "detail": {
+                        "items": {
+                            "$ref": "#/components/schemas/ValidationError"
+                        },
+                        "type": "array",
+                        "title": "Detail"
+                    }
+                },
+                "type": "object",
+                "title": "HTTPValidationError"
+            },
+            "MeetingSummary": {
+                "properties": {
+                    "participants": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Participants"
+                    },
+                    "key_decisions": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Key Decisions"
+                    },
+                    "action_items": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Action Items"
+                    },
+                    "questions_asked": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Questions Asked"
+                    },
+                    "meeting_duration": {
+                        "type": "string",
+                        "title": "Meeting Duration"
+                    },
+                    "summary_text": {
+                        "type": "string",
+                        "title": "Summary Text"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "participants",
+                    "key_decisions",
+                    "action_items",
+                    "questions_asked",
+                    "meeting_duration",
+                    "summary_text"
+                ],
+                "title": "MeetingSummary"
+            },
+            "StartAgentRequest": {
+                "properties": {
+                    "meeting_url": {
+                        "type": "string",
+                        "title": "Meeting Url"
+                    },
+                    "participants_info": {
+                        "anyOf": [
+                            {
+                                "additionalProperties": true,
+                                "type": "object"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Participants Info"
+                    },
+                    "backend_api_url": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Backend Api Url",
+                        "default": "http://localhost:8000"
+                    },
+                    "lemonfox_api_key": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Lemonfox Api Key"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "meeting_url"
+                ],
+                "title": "StartAgentRequest"
+            },
+            "ValidationError": {
+                "properties": {
+                    "loc": {
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "integer"
+                                }
+                            ]
+                        },
+                        "type": "array",
+                        "title": "Location"
+                    },
+                    "msg": {
+                        "type": "string",
+                        "title": "Message"
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "Error Type"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "loc",
+                    "msg",
+                    "type"
+                ],
+                "title": "ValidationError"
+            }
+        }
+    }
+}

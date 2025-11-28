@@ -1,0 +1,295 @@
+Message: '✨ Cleaned Text: Хорошо, я получил задание исправить орфографические и грамматические ошибки в тексте, который был получен через speech-to-text. Нужно сохранить смысл и структуру, исправив только очевидные ошибки распознавания речи. \n\nСначала я прочитаю весь текст, чтобы понять общий смысл. Кажется, это обсуждение задачи по созданию Telegram-бота для уведомлений, который работает с Google Meet, использует ИИ для анализа субтитров и извлечения итогов встреч. Также упоминается графический дизайнер, который должен построить дашборд, и команда разработчиков.\n\nТеперь посмотрю на явные ошибки. Вижу повторяющиеся фразы, возможно, это дубли из-за некорректного распознавания речи. Нужно оставить только одну версию без повторений.\n\nСлова "сиренью селением" явно не подходят по смыслу. Думаю, это искажение "Selenium" — популярного фреймворка для автоматизации веб-приложений. Исправлю это.\n\n"Google миту" и "Google МИД" — должно быть "Google Meet". "deepsic" — вероятно, "DeepSeek" или другая модель, но оставлю как есть, так как не уверен. "дэшпорт" — наверное, "дашборд". "потан населению" — возможно, "потенциальным пользователям".\n\n"пакет разработчик" — может быть, "backend разработчик"? "Back and разработчик" — тоже похоже на "backend разработчик". \n\nТеперь посмотрю на пунктуацию и заглавные буквы. Начало предложений, названия технологий и ботов должны быть с заглавной буквы. Также добавлю пропущенные пробелы после знаков препинания.\n\nУберу повторяющиеся части сообщений, оставив только последний, самый полный вариант. Убедюсь, что смысл не искажен, и все технические детали сохранены. \n\nВ итоге должен получиться чистый, понятный текст без лишних повторов и с исправленными ошибками.\n[20:52:08] mukhametzhan-dev:  \nАлло, слушайте. Наша сегодняшняя задача заключается в том, чтобы полностью реализовать Telegram-бота, который отвечает за уведомления. То есть полная архитектура должна выглядеть следующим образом: бот, который заходит в Google Meet, получает субтитры и через модели искусственного интеллекта проводит анализ, чтобы извлечь итоги встреч и потенциальные вопросы для уточнения.  \n\nНаш автоматизированный бот будет подключаться к Google Meet с использованием фреймворка Selenium. Получается, Selenium будет парсить включенные субтитры и отправлять их в пакет.  \n\nСледующая задача выдается графическому дизайнеру. Сперва он должен построить дашборд, который поможет контролировать потенциальным пользователям. Получается, через интерфейс пользователь указывает ссылку на Google Meet. Мы будем использовать Open Source модель DeepSeek.  \n\nВ нашей команде будет ответственный за выполнение этой задачи — backend-разработчик. Остальные участники команды будут просто вручную тестировать и давать обратную связь.  \n\nНа этом наш звонок подходит к концу. Ждем вас на следующей встрече.'
+Arguments: ()
+2025-11-27 20:54:00,774 - ai_requests - INFO - ✨ Cleaned Text: Хорошо, я получил задание исправить орфографические и грамматические ошибки в тексте, который был получен через speech-to-text. Нужно сохранить смысл и структуру, исправив только очевидные ошибки распознавания речи.
+
+Сначала я прочитаю весь текст, чтобы понять общий смысл. Кажется, это обсуждение задачи по созданию Telegram-бота для уведомлений, который работает с Google Meet, использует ИИ для анализа субтитров и извлечения итогов встреч. Также упоминается графический дизайнер, который должен построить дашборд, и команда разработчиков.
+
+Теперь посмотрю на явные ошибки. Вижу повторяющиеся фразы, возможно, это дубли из-за некорректного распознавания речи. Нужно оставить только одну версию без повторений.
+
+Слова "сиренью селением" явно не подходят по смыслу. Думаю, это искажение "Selenium" — популярного фреймворка для автоматизации веб-приложений. Исправлю это.
+
+"Google миту" и "Google МИД" — должно быть "Google Meet". "deepsic" — вероятно, "DeepSeek" или другая модель, но оставлю как есть, так как не уверен. "дэшпорт" — наверное, "дашборд". "потан населению" — возможно, "потенциальным пользователям".
+
+"пакет разработчик" — может быть, "backend разработчик"? "Back and разработчик" — тоже похоже на "backend разработчик".
+
+Теперь посмотрю на пунктуацию и заглавные буквы. Начало предложений, названия технологий и ботов должны быть с заглавной буквы. Также добавлю пропущенные пробелы после знаков препинания.
+
+Уберу повторяющиеся части сообщений, оставив только последний, самый полный вариант. Убедюсь, что смысл не искажен, и все технические детали сохранены.
+
+В итоге должен получиться чистый, понятный текст без лишних повторов и с исправленными ошибками.
+[20:52:08] mukhametzhan-dev:
+Алло, слушайте. Наша сегодняшняя задача заключается в том, чтобы полностью реализовать Telegram-бота, который отвечает за уведомления. То есть полная архитектура должна выглядеть следующим образом: бот, который заходит в Google Meet, получает субтитры и через модели искусственного интеллекта проводит анализ, чтобы извлечь итоги встреч и потенциальные вопросы для уточнения.
+
+Наш автоматизированный бот будет подключаться к Google Meet с использованием фреймворка Selenium. Получается, Selenium будет парсить включенные субтитры и отправлять их в пакет.
+
+Следующая задача выдается графическому дизайнеру. Сперва он должен построить дашборд, который поможет контролировать потенциальным пользователям. Получается, через интерфейс пользователь указывает ссылку на Google Meet. Мы будем использовать Open Source модель DeepSeek.
+
+
+В нашей команде будет ответственный за выполнение этой задачи — backend-разработчик. Остальные участники команды будут просто вручную тестировать и давать обратную связь.
+
+На этом наш звонок подходит к концу. Ждем вас на следующей встрече.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1153, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\Users\Mukhamed\Documents\MeetAgent\main.py", line 716, in <module>
+    uvicorn.run(app, host="0.0.0.0", port=8001)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\main.py", line 593, in run
+    server.run()
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 708, in run_until_complete
+    self.run_forever()
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 679, in run_forever
+    self._run_once()
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2027, in _run_once
+    handle._run()
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\applications.py", line 1134, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 125, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 111, in app
+    response = await f(request)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 391, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 290, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\main.py", line 621, in process_final_transcript
+    summary = await generate_meeting_summary(cleaned_transcript, session_data)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\main.py", line 303, in generate_meeting_summary
+    ai_logger.info(f"✅ Response Status: {response.status_code}")
+Message: '✅ Response Status: 200'
+Arguments: ()
+2025-11-27 20:54:14,187 - ai_requests - INFO - ✅ Response Status: 200
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1153, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e5' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\Users\Mukhamed\Documents\MeetAgent\main.py", line 716, in <module>
+    uvicorn.run(app, host="0.0.0.0", port=8001)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\main.py", line 593, in run
+    server.run()
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 708, in run_until_complete
+    self.run_forever()
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 679, in run_forever
+    self._run_once()
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2027, in _run_once
+    handle._run()
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\applications.py", line 1134, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 125, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 111, in app
+    response = await f(request)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 391, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 290, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\main.py", line 621, in process_final_transcript
+    summary = await generate_meeting_summary(cleaned_transcript, session_data)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\main.py", line 307, in generate_meeting_summary
+    ai_logger.info(f"📥 Meeting Summary Response: {json.dumps(response_data, indent=2, ensure_ascii=False)}")
+Message: '📥 Meeting Summary Response: {\n  "id": "gen-1764255231-Q05ElMl0MHQuxli3KU76",\n  "provider": "Chutes",\n  "model": "tngtech/deepseek-r1t-chimera:free",\n  "object": "chat.completion",\n  "created": 1764255232,\n  "choices": [\n    {\n      "logprobs": null,\n      "finish_reason": "stop",\n      "native_finish_reason": "stop",\n      "index": 0,\n      "message": {\n        "role": "assistant",\n        "content": "Хорошо, давайте разберемся с этой задачей. Нужно создать структурированную сводку из предоставленного транскрипта совещания. Первым делом я должен понять суть обсуждения и выделить ключевые элементы. \\n\\nСначала извлекаю участников. Из текста упоминаются графический дизайнер, пакетный разработчик (backend-разработчик) и остальные участники команды, которые занимаются тестированием. Пока что это единственные указанные роли, явных имен нет, поэтому перечислю их по ролям.\\n\\nДалее перехожу к ключевым решениям. Вижу, что решили использовать Selenium для подключения к Google Meet и парсинга субтитров, а также выбрали модель DeepSeek для анализа текста. Это два основных решения.\\n\\nТеперь задачи. Графическому дизайнеру поручено создать дашборд, а backend-разработчику — реализовать основную функциональность бота. Остальная команда будет тестировать вручную. \\n\\nОбсуждаемые вопросы не так явно выделены, но можно предположить, что речь шла о выборе инструментов (Selenium и DeepSeek) и архитектуре бота. Возможно, были вопросы по взаимодействию между компонентами системы.\\n\\nВ общей сводке нужно кратко описать цель совещания: обсуждение разработки Telegram-бота для анализа субтитров Google Meet с использованием ИИ, распределение задач и выбор технологий.\\n\\nТеперь оформляю все это в заданный формат, проверяю, чтобы не было повторов, и убеждаюсь, что все логично связано.\\n**УЧАСТНИКИ:**  \\n- Графический дизайнер  \\n- Пакетный разработчик (backend-разработчик)  \\n- Участники команды (тестировщики)  \\n\\n**КЛЮЧЕВЫЕ_РЕШЕНИЯ:**  \\n- Использовать **Selenium** для подключения к Google Meet и парсинга субтитров.  \\n- Применить модель **DeepSeek** для анализа текста и извлечения итогов встреч и вопросов.  \\n\\n**ЗАДАЧИ_И_ДЕЙСТВИЯ:**  \\n- Разработать дашборд для контроля потребностей — **графический дизайнер**.  \\n- Реализовать архитектуру бота (подключение к Meet, обработка субтитров, интеграция с ИИ) — **backend-разработчик**.  \\n- Провести ручное тестирование и предоставить обратную связь — **участники команды**.  \\n\\n**ВОПРОСЫ_ОБСУЖДЕННЫЕ:**  \\n- Выбор инструментов для автоматизации (Selenium) и анализа текста (DeepSeek).  \\n- Процесс взаимодействия пользователя с ботом через интерфейс (ссылка на Google Meet).  \\n\\n**ОБЩАЯ_СВОДКА:**  \\nНа совещании обсудили разработку Telegram-бота для автоматического анализа субтитров Google Meet с использованием ИИ. Определили архитектуру (Selenium + DeepSeek), распределили задачи между командой и утвердили этапы реализации: парсинг субтитров, анализ текста и создание дашборда для управления процессом.",\n        "refusal": null,\n        "reasoning": null\n      }\n    }\n  ],\n  "usage": {\n    "prompt_tokens": 827,\n    "total_tokens": 1593,\n    "completion_tokens": 766,\n    "prompt_tokens_details": {\n      "cached_tokens": 2\n    },\n    "reasoning_tokens": 0\n  }\n}'
+Arguments: ()
+2025-11-27 20:54:14,192 - ai_requests - INFO - 📥 Meeting Summary Response: {
+  "id": "gen-1764255231-Q05ElMl0MHQuxli3KU76",
+  "provider": "Chutes",
+  "model": "tngtech/deepseek-r1t-chimera:free",
+  "object": "chat.completion",
+  "created": 1764255232,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Хорошо, давайте разберемся с этой задачей. Нужно создать структурированную сводку из предоставленного транскрипта совещания. Первым делом я должен понять суть обсуждения и выделить ключевые элементы. \n\nСначала извлекаю участников. Из текста упоминаются графический дизайнер, пакетный разработчик (backend-разработчик) и остальные участники команды, которые занимаются тестированием. Пока что это единственные указанные роли, явных имен нет, поэтому перечислю их по ролям.\n\nДалее перехожу к ключевым решениям. Вижу, что решили использовать Selenium для подключения к Google Meet и парсинга субтитров, а также выбрали модель DeepSeek для анализа текста. Это два основных решения.\n\nТеперь задачи. Графическому дизайнеру поручено создать дашборд, а backend-разработчику — реализовать основную функциональность бота. Остальная команда будет тестировать вручную. \n\nОбсуждаемые вопросы не так явно выделены, но можно предположить, что речь шла о выборе инструментов (Selenium и DeepSeek) и архитектуре бота. Возможно, были вопросы по взаимодействию между компонентами системы.\n\nВ общей сводке нужно кратко описать цель совещания: обсуждение разработки Telegram-бота для анализа субтитров Google Meet с использованием ИИ, распределение задач и выбор технологий.\n\nТеперь оформляю все это в заданный формат, проверяю, чтобы не было повторов, и убеждаюсь, что все логично связано.\n**УЧАСТНИКИ:**  \n- Графический дизайнер  \n- Пакетный разработчик (backend-разработчик)  \n- Участники команды (тестировщики)  \n\n**КЛЮЧЕВЫЕ_РЕШЕНИЯ:**  \n- Использовать **Selenium** для подключения к Google Meet и парсинга субтитров.  \n- Применить модель **DeepSeek** для анализа текста и извлечения итогов встреч и вопросов.  \n\n**ЗАДАЧИ_И_ДЕЙСТВИЯ:**  \n- Разработать дашборд для контроля потребностей — **графический дизайнер**.  \n- Реализовать архитектуру бота (подключение к Meet, обработка субтитров, интеграция с ИИ) — **backend-разработчик**.  \n- Провести ручное тестирование и предоставить обратную связь — **участники команды**.  \n\n**ВОПРОСЫ_ОБСУЖДЕННЫЕ:**  \n- Выбор инструментов для автоматизации (Selenium) и анализа текста (DeepSeek).  \n- Процесс взаимодействия пользователя с ботом через интерфейс (ссылка на Google Meet).  \n\n**ОБЩАЯ_СВОДКА:**  \nНа совещании обсудили разработку Telegram-бота для автоматического анализа субтитров Google Meet с использованием ИИ. Определили архитектуру (Selenium + DeepSeek), распределили задачи между командой и утвердили этапы реализации: парсинг субтитров, анализ текста и создание дашборда для управления процессом.",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 827,
+    "total_tokens": 1593,
+    "completion_tokens": 766,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "reasoning_tokens": 0
+  }
+}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1153, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4cb' in position 33: character maps to <undefined>
+Call stack:
+  File "C:\Users\Mukhamed\Documents\MeetAgent\main.py", line 716, in <module>
+    uvicorn.run(app, host="0.0.0.0", port=8001)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\main.py", line 593, in run
+    server.run()
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 708, in run_until_complete
+    self.run_forever()
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 679, in run_forever
+    self._run_once()
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 2027, in _run_once
+    handle._run()
+  File "C:\Users\Mukhamed\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\applications.py", line 1134, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 125, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 111, in app
+    response = await f(request)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 391, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Mukhamed\Documents\MeetAgent\bot_env\Lib\site-packages\fastapi\routing.py", line 290, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\main.py", line 621, in process_final_transcript
+    summary = await generate_meeting_summary(cleaned_transcript, session_data)
+  File "C:\Users\Mukhamed\Documents\MeetAgent\main.py", line 310, in generate_meeting_summary
+    ai_logger.info(f"📋 Generated Summary Text: {summary_text}")
+Message: '📋 Generated Summary Text: Хорошо, давайте разберемся с этой задачей. Нужно создать структурированную сводку из предоставленного транскрипта совещания. Первым делом я должен понять суть обсуждения и выделить ключевые элементы. \n\nСначала извлекаю участников. Из текста упоминаются графический дизайнер, пакетный разработчик (backend-разработчик) и остальные участники команды, которые занимаются тестированием. Пока что это единственные указанные роли, явных имен нет, поэтому перечислю их по ролям.\n\nДалее перехожу к ключевым решениям. Вижу, что решили использовать Selenium для подключения к Google Meet и парсинга субтитров, а также выбрали модель DeepSeek для анализа текста. Это два основных решения.\n\nТеперь задачи. Графическому дизайнеру поручено создать дашборд, а backend-разработчику — реализовать основную функциональность бота. Остальная команда будет тестировать вручную. \n\nОбсуждаемые вопросы не так явно выделены, но можно предположить, что речь шла о выборе инструментов (Selenium и DeepSeek) и архитектуре бота. Возможно, были вопросы по взаимодействию между компонентами системы.\n\nВ общей сводке нужно кратко описать цель совещания: обсуждение разработки Telegram-бота для анализа субтитров Google Meet с использованием ИИ, распределение задач и выбор технологий.\n\nТеперь оформляю все это в заданный формат, проверяю, чтобы не было повторов, и убеждаюсь, что все логично связано.\n**УЧАСТНИКИ:**  \n- Графический дизайнер  \n- Пакетный разработчик (backend-разработчик)  \n- Участники команды (тестировщики)  \n\n**КЛЮЧЕВЫЕ_РЕШЕНИЯ:**  \n- Использовать **Selenium** для подключения к Google Meet и парсинга субтитров.  \n- Применить модель **DeepSeek** для анализа текста и извлечения итогов встреч и вопросов.  \n\n**ЗАДАЧИ_И_ДЕЙСТВИЯ:**  \n- Разработать дашборд для контроля потребностей — **графический дизайнер**.  \n- Реализовать архитектуру бота (подключение к Meet, обработка субтитров, интеграция с ИИ) — **backend-разработчик**.  \n- Провести ручное тестирование и предоставить обратную связь — **участники команды**.  \n\n**ВОПРОСЫ_ОБСУЖДЕННЫЕ:**  \n- Выбор инструментов для автоматизации (Selenium) и анализа текста (DeepSeek).  \n- Процесс взаимодействия пользователя с ботом через интерфейс (ссылка на Google Meet).  \n\n**ОБЩАЯ_СВОДКА:**  \nНа совещании обсудили разработку Telegram-бота для автоматического анализа субтитров Google Meet с использованием ИИ. Определили архитектуру (Selenium + DeepSeek), распределили задачи между командой и утвердили этапы реализации: парсинг субтитров, анализ текста и создание дашборда для управления процессом.'
+Arguments: ()
+2025-11-27 20:54:14,200 - ai_requests - INFO - 📋 Generated Summary Text: Хорошо, давайте разберемся с этой задачей. Нужно создать структурированную сводку из предоставленного транскрипта совещания. Первым делом я должен понять суть обсуждения и выделить ключевые элементы.
+
+Сначала извлекаю участников. Из текста упоминаются графический дизайнер, пакетный разработчик (backend-разработчик) и остальные участники команды, которые занимаются тестированием. Пока что это единственные указанные роли, явных имен нет, поэтому перечислю их по ролям. 
+
+Далее перехожу к ключевым решениям. Вижу, что решили использовать Selenium для подключения к Google Meet и парсинга субтитров, а также выбрали модель DeepSeek для анализа текста. Это два основных решения.
+
+Теперь задачи. Графическому дизайнеру поручено создать дашборд, а backend-разработчику — реализовать основную функциональность бота. Остальная команда будет тестировать вручную.
+
+Обсуждаемые вопросы не так явно выделены, но можно предположить, что речь шла о выборе инструментов (Selenium и DeepSeek) и архитектуре бота. Возможно, были вопросы по взаимодействию между компонентами системы.
+
+В общей сводке нужно кратко описать цель совещания: обсуждение разработки Telegram-бота для анализа субтитров Google Meet с использованием ИИ, распределение задач и выбор технологий.
+
+Теперь оформляю все это в заданный формат, проверяю, чтобы не было повторов, и убеждаюсь, что все логично связано.
+**УЧАСТНИКИ:**
+- Графический дизайнер
+- Пакетный разработчик (backend-разработчик)
+- Участники команды (тестировщики)
+
+**КЛЮЧЕВЫЕ_РЕШЕНИЯ:**
+- Использовать **Selenium** для подключения к Google Meet и парсинга субтитров.
+- Применить модель **DeepSeek** для анализа текста и извлечения итогов встреч и вопросов.
+
+**ЗАДАЧИ_И_ДЕЙСТВИЯ:**
+- Разработать дашборд для контроля потребностей — **графический дизайнер**.
+- Реализовать архитектуру бота (подключение к Meet, обработка субтитров, интеграция с ИИ) — **backend-разработчик**.
+- Провести ручное тестирование и предоставить обратную связь — **участники команды**.
+
+**ВОПРОСЫ_ОБСУЖДЕННЫЕ:**
+- Выбор инструментов для автоматизации (Selenium) и анализа текста (DeepSeek).
+- Процесс взаимодействия пользователя с ботом через интерфейс (ссылка на Google Meet).
+
+**ОБЩАЯ_СВОДКА:**
+На совещании обсудили разработку Telegram-бота для автоматического анализа субтитров Google Meet с использованием ИИ. Определили архитектуру (Selenium + DeepSeek), распределили задачи между командой и утвердили этапы реализации: парсинг субтитров, анализ текста и создание дашборда для управления процессом.
+2025-11-27 20:54:15,149 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8234928556:AAGW43f-WgzsbhVbz_lahKD7DYyopmQgdE4/sendMessage "HTTP/1.1 200 OK"
+2025-11-27 20:54:15,150 - __main__ - INFO - Telegram notification sent successfully for session 99c763f6-1609-47d2-b57c-08074cd4e950
+2025-11-27 20:54:15,150 - __main__ - INFO - Final transcript processed for session 99c763f6-1609-47d2-b57c-08074cd4e950, Telegram sent: True

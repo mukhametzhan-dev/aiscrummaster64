@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  meet-bot:
+    build: .
+    container_name: meet-bot
+    environment:
+      - MEETING_URL=https://meet.google.com/abc-defg-hij
+      - HEADLESS=true
+    volumes:
+      - ./meet_bot.py:/app/meet_bot.py # Для удобства разработки
+    # shm_size важен для Chrome в докере, иначе может падать
+    shm_size: '2gb' 
+    network_mode: "host" # Чтобы видеть localhost:8000 хоста
